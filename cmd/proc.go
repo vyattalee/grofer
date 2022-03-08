@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/factory"
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/factory"
+	"github.com/vyattalee/grofer/pkg/utils"
 	"github.com/spf13/cobra"
 )
 

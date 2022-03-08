@@ -22,7 +22,7 @@ import (
 	"syscall"
 
 	ui "github.com/gizak/termui/v3"
-	viz "github.com/pesos/grofer/pkg/utils/visualization"
+	viz "github.com/vyattalee/grofer/pkg/utils/visualization"
 )
 
 var allSignals = [][]string{

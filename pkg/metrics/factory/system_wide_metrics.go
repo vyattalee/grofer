@@ -19,9 +19,9 @@ package factory
 import (
 	"context"
 
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/general"
-	overallGraph "github.com/pesos/grofer/pkg/sink/tui/general"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/general"
+	overallGraph "github.com/vyattalee/grofer/pkg/sink/tui/general"
 	"golang.org/x/sync/errgroup"
 )
 

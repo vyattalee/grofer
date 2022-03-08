@@ -20,8 +20,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/utils"
 )
 
 // AggregatedMetrics represents global metrics to be consumed.

@@ -26,12 +26,12 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/client"
 	ui "github.com/gizak/termui/v3"
-	"github.com/pesos/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/core"
 
-	containerMetrics "github.com/pesos/grofer/pkg/metrics/container"
-	"github.com/pesos/grofer/pkg/sink/tui/misc"
-	"github.com/pesos/grofer/pkg/utils"
-	viz "github.com/pesos/grofer/pkg/utils/visualization"
+	containerMetrics "github.com/vyattalee/grofer/pkg/metrics/container"
+	"github.com/vyattalee/grofer/pkg/sink/tui/misc"
+	"github.com/vyattalee/grofer/pkg/utils"
+	viz "github.com/vyattalee/grofer/pkg/utils/visualization"
 )
 
 // OverallVisuals provides the UI for overall container metrics

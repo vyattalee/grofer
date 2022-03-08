@@ -5,14 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90f78843-cc2c-442e-8065-ce5e6fc45b53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/pull_request_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/pull_request_template.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/container.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/container.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/export.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/export.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/proc.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/proc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grofer.go" beforeDir="false" afterPath="$PROJECT_DIR$/grofer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/export/general_export.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/export/general_export.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/export/proc_export.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/export/proc_export.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/container/container.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/container/container.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/container/container_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/container/container_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/factory/container_metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/factory/container_metrics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/factory/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/factory/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/factory/metrics_factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/factory/metrics_factory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/factory/process_metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/factory/process_metrics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/factory/system_wide_metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/factory/system_wide_metrics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/general/cpu_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/general/cpu_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/general/general_stats.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/general/general_stats.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/metrics/general/serve_stats.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/metrics/general/serve_stats.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/container/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/container/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/container/overall_container.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/container/overall_container.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/container/per_container.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/container/per_container.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/general/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/general/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/general/overall_graphs.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/general/overall_graphs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/misc/actions.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/misc/actions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/misc/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/misc/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/misc/help.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/misc/help.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/sink/tui/misc/signals.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/misc/signals.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/misc/signals_darwin.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/misc/signals_darwin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/process/all_procs.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/process/all_procs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/process/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/process/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/sink/tui/process/per_proc.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sink/tui/process/per_proc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/utils/data_format_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/utils/data_format_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/utils/sort_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/utils/sort_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/go/go1.17.7" />
+  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.16/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -32,6 +68,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -39,22 +77,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
-  </component>
-  <component name="RunManager">
-    <configuration name="go build grofer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="grofer" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/grofer.go" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build grofer.go" />
-      </list>
-    </recent_temporary>
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -62,5 +85,10 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn, direct, https://gopm.io/" />
+      </map>
+    </environment>
   </component>
 </project>

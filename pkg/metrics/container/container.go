@@ -27,7 +27,7 @@ import (
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/client"
 	ui "github.com/gizak/termui/v3"
-	"github.com/pesos/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/core"
 )
 
 // PerContainerMetrics holds metrics for a given container

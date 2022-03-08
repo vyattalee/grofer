@@ -24,11 +24,11 @@ import (
 	"time"
 
 	ui "github.com/gizak/termui/v3"
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/process"
-	"github.com/pesos/grofer/pkg/sink/tui/misc"
-	"github.com/pesos/grofer/pkg/utils"
-	viz "github.com/pesos/grofer/pkg/utils/visualization"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/process"
+	"github.com/vyattalee/grofer/pkg/sink/tui/misc"
+	"github.com/vyattalee/grofer/pkg/utils"
+	viz "github.com/vyattalee/grofer/pkg/utils/visualization"
 )
 
 func getChildProcs(proc *process.Process) [][]string {

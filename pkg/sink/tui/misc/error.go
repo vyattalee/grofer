@@ -18,7 +18,7 @@ package misc
 
 import (
 	ui "github.com/gizak/termui/v3"
-	vz "github.com/pesos/grofer/pkg/utils/visualization"
+	vz "github.com/vyattalee/grofer/pkg/utils/visualization"
 )
 
 // ErrorBox is a wrapper widget around a List

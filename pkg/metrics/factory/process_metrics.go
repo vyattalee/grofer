@@ -19,10 +19,10 @@ package factory
 import (
 	"context"
 
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/process"
-	processGraph "github.com/pesos/grofer/pkg/sink/tui/process"
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/process"
+	processGraph "github.com/vyattalee/grofer/pkg/sink/tui/process"
+	"github.com/vyattalee/grofer/pkg/utils"
 	proc "github.com/shirou/gopsutil/process"
 	"golang.org/x/sync/errgroup"
 )

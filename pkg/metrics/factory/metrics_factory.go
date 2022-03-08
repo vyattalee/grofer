@@ -23,9 +23,9 @@ import (
 	proc "github.com/shirou/gopsutil/process"
 
 	"github.com/docker/docker/client"
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/container"
-	"github.com/pesos/grofer/pkg/metrics/process"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/container"
+	"github.com/vyattalee/grofer/pkg/metrics/process"
 )
 
 // MetricScraperFactory constructs a MetricScaper for a command

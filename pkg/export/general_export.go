@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	cpuInfo "github.com/pesos/grofer/pkg/metrics/general"
-	"github.com/pesos/grofer/pkg/utils"
+	cpuInfo "github.com/vyattalee/grofer/pkg/metrics/general"
+	"github.com/vyattalee/grofer/pkg/utils"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/disk"
 	"github.com/shirou/gopsutil/mem"

@@ -6,7 +6,7 @@
 - Clone the fork on your system. Add a remote to the original `pesos/grofer` repository called `upstream`
 ```
 git clone https://github.com/<your-github-username>/grofer.git
-git remote add upstream https://github.com/pesos/grofer.git
+git remote add upstream https://github.com/vyattalee/grofer.git
 ```
 - Make your changes and commit them
 ```

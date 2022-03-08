@@ -19,12 +19,12 @@ package factory
 import (
 	"context"
 
-	containerGraph "github.com/pesos/grofer/pkg/sink/tui/container"
+	containerGraph "github.com/vyattalee/grofer/pkg/sink/tui/container"
 
 	"github.com/docker/docker/client"
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/container"
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/container"
+	"github.com/vyattalee/grofer/pkg/utils"
 	"golang.org/x/sync/errgroup"
 )
 

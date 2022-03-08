@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/utils"
 )
 
 // CPULoad type contains info about load on CPU from various sources

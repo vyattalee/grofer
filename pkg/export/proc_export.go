@@ -24,8 +24,8 @@ import (
 	"strings"
 	"time"
 
-	procInfo "github.com/pesos/grofer/pkg/metrics/process"
-	"github.com/pesos/grofer/pkg/utils"
+	procInfo "github.com/vyattalee/grofer/pkg/metrics/process"
+	"github.com/vyattalee/grofer/pkg/utils"
 )
 
 type contextSwitches struct {

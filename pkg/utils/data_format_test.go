@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/utils"
 )
 
 func TestRoundValues(t *testing.T) {

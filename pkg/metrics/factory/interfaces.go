@@ -17,7 +17,7 @@ limitations under the License.
 package factory
 
 import (
-	"github.com/pesos/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/core"
 )
 
 // MetricScraper scrapes metrics of some form and serves it based on

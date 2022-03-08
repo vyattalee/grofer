@@ -5,7 +5,7 @@
 grofer
 ======
 
-[![Go Checks](https://github.com/pesos/grofer/actions/workflows/go-checks.yml/badge.svg)](https://github.com/pesos/grofer/actions/workflows/go-checks.yml) [![License Check](https://github.com/pesos/grofer/actions/workflows/license-check.yml/badge.svg)](https://github.com/pesos/grofer/actions/workflows/license-check.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/pesos/grofer)](https://goreportcard.com/report/github.com/pesos/grofer) [![Go Reference](https://pkg.go.dev/badge/github.com/pesos/grofer.svg)](https://pkg.go.dev/github.com/pesos/grofer) [![Publish Development Docker Image](https://github.com/pesos/grofer/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/pesos/grofer/actions/workflows/docker-publish.yml) [![Publish Stable Docker Image](https://github.com/pesos/grofer/actions/workflows/docker-publish-stable.yml/badge.svg)](https://github.com/pesos/grofer/actions/workflows/docker-publish-stable.yml) [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
+[![Go Checks](https://github.com/vyattalee/grofer/actions/workflows/go-checks.yml/badge.svg)](https://github.com/vyattalee/grofer/actions/workflows/go-checks.yml) [![License Check](https://github.com/vyattalee/grofer/actions/workflows/license-check.yml/badge.svg)](https://github.com/vyattalee/grofer/actions/workflows/license-check.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/vyattalee/grofer)](https://goreportcard.com/report/github.com/vyattalee/grofer) [![Go Reference](https://pkg.go.dev/badge/github.com/vyattalee/grofer.svg)](https://pkg.go.dev/github.com/vyattalee/grofer) [![Publish Development Docker Image](https://github.com/vyattalee/grofer/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/vyattalee/grofer/actions/workflows/docker-publish.yml) [![Publish Stable Docker Image](https://github.com/vyattalee/grofer/actions/workflows/docker-publish-stable.yml/badge.svg)](https://github.com/vyattalee/grofer/actions/workflows/docker-publish-stable.yml) [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 
 ### Latest Stable Version: ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/pesos/grofer?label=latest%20version&sort=semver)
 
@@ -19,13 +19,13 @@ Installation
 Using go get:
 
 ```
-go get -u github.com/pesos/grofer
+go get -u github.com/vyattalee/grofer
 ```
 
 As an executable:
 
 ```
-curl -sSL https://github.com/pesos/grofer/releases/download/<version tag>/grofer_<architecture> --output grofer
+curl -sSL https://github.com/vyattalee/grofer/releases/download/<version tag>/grofer_<architecture> --output grofer
 chmod +x grofer
 ```
 
@@ -44,7 +44,7 @@ mv grofer /usr/local/bin
 Building from source:
 
 ```
-git clone https://github.com/pesos/grofer
+git clone https://github.com/vyattalee/grofer
 cd grofer
 go build grofer.go
 ```

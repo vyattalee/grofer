@@ -21,7 +21,7 @@ import (
 
 	ui "github.com/gizak/termui/v3"
 	"github.com/gizak/termui/v3/widgets"
-	viz "github.com/pesos/grofer/pkg/utils/visualization"
+	viz "github.com/vyattalee/grofer/pkg/utils/visualization"
 )
 
 // MainPage contains the UI widgets for the UI rendered by the grofer command

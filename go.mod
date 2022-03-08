@@ -1,4 +1,4 @@
-module github.com/pesos/grofer
+module github.com/vyattalee/grofer
 
 go 1.16
 

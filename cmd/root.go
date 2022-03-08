@@ -21,8 +21,8 @@ import (
 	"os"
 
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/pesos/grofer/pkg/core"
-	"github.com/pesos/grofer/pkg/metrics/factory"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/factory"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

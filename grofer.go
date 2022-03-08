@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/pesos/grofer/cmd"
+import "github.com/vyattalee/grofer/cmd"
 
 func main() {
 	cmd.Execute()

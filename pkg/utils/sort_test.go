@@ -19,7 +19,7 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/pesos/grofer/pkg/utils"
+	"github.com/vyattalee/grofer/pkg/utils"
 )
 
 func TestSortData(t *testing.T) {
