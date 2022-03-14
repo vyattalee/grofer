@@ -22,4 +22,5 @@ require (
 	golang.org/x/net v0.0.0-20210924151903-3ad01bbaa167 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	gopkg.in/yaml.v2 v2.4.0
+	howett.net/plist v0.0.0-20181124034731-591f970eefbb // indirect
 )
