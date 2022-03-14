@@ -26,9 +26,10 @@ import (
 )
 
 type systemWideMetrics struct {
-	cpuInfo     bool
-	sink        core.Sink // defaults to TUI.
-	refreshRate uint64
+	cpuInfo       bool
+	sink          core.Sink // defaults to TUI.
+	refreshRate   uint64
+	serverAddress string
 }
 
 // Serve serves system wide metrics.
@@ -53,7 +54,7 @@ func (swm *systemWideMetrics) serveGenericMetrics() error {
 	// start producing metrics.
 	eg.Go(func() error {
 		alteredRefreshRate := uint64(4 * swm.refreshRate / 5)
-		return general.GlobalStats(ctx, metricBus, alteredRefreshRate)
+		return general.GlobalStats(ctx, metricBus, alteredRefreshRate, swm.serverAddress) //, swm.serverAddress
 	})
 
 	// start consuming metrics.

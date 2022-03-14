@@ -44,7 +44,7 @@ func roundOff(num uint64) float64 {
 }
 
 // ServeInfo provides information about the system such as OS info, uptime, boot time, etc.
-func ServeInfo(ctx context.Context, cpuChannel chan AggregatedMetrics) error {
+func ServeInfo(ctx context.Context, cpuChannel chan AggregatedMetrics, serverAddress string) error {
 	info, err := host.InfoWithContext(ctx)
 	if err != nil {
 		return err
@@ -73,7 +73,7 @@ func ServeInfo(ctx context.Context, cpuChannel chan AggregatedMetrics) error {
 }
 
 // ServeBattery serves battery percentage information
-func ServeBattery(ctx context.Context, cpuChannel chan AggregatedMetrics) error {
+func ServeBattery(ctx context.Context, cpuChannel chan AggregatedMetrics, serverAddress string) error {
 
 	_, err1 := os.Stat("/sys/class/power_supply/BAT0/charge_now")
 	_, err2 := os.Stat("/sys/class/power_supply/BAT0/charge_full")
@@ -126,7 +126,7 @@ func GetCPURates() ([]float64, error) {
 }
 
 // ServeCPURates serves the cpu rates to the cpu channel
-func ServeCPURates(ctx context.Context, cpuChannel chan AggregatedMetrics) error {
+func ServeCPURates(ctx context.Context, cpuChannel chan AggregatedMetrics, serverAddress string) error {
 	cpuRates, err := cpu.Percent(time.Second, true)
 	if err != nil {
 		return err
@@ -145,7 +145,7 @@ func ServeCPURates(ctx context.Context, cpuChannel chan AggregatedMetrics) error
 }
 
 // ServeMemRates serves stats about the memory to the data channel
-func ServeMemRates(ctx context.Context, dataChannel chan AggregatedMetrics) error {
+func ServeMemRates(ctx context.Context, dataChannel chan AggregatedMetrics, serverAddress string) error {
 	memory, err := mem.VirtualMemory()
 	if err != nil {
 		return err
@@ -168,7 +168,7 @@ func ServeMemRates(ctx context.Context, dataChannel chan AggregatedMetrics) erro
 
 // ServeTemperatureRates feeds temperature values from input sensors into the data channel
 // Credits to https://github.com/cjbassi/gotop
-func ServeTemperatureRates(ctx context.Context, dataChannel chan AggregatedMetrics) error {
+func ServeTemperatureRates(ctx context.Context, dataChannel chan AggregatedMetrics, serverAddress string) error {
 	sensors, err := host.SensorsTemperatures()
 	if err != nil && !strings.Contains(err.Error(), "Number of warnings:") {
 		return err
@@ -202,7 +202,7 @@ func ServeTemperatureRates(ctx context.Context, dataChannel chan AggregatedMetri
 }
 
 // ServeDiskRates serves the disk rate data to the data channel
-func ServeDiskRates(ctx context.Context, dataChannel chan AggregatedMetrics) error {
+func ServeDiskRates(ctx context.Context, dataChannel chan AggregatedMetrics, serverAddress string) error {
 	var partitions []disk.PartitionStat
 	var err error
 	partitions, err = disk.Partitions(false)
@@ -246,7 +246,7 @@ func ServeDiskRates(ctx context.Context, dataChannel chan AggregatedMetrics) err
 }
 
 // ServeNetRates serves info about the network to the data channel
-func ServeNetRates(ctx context.Context, dataChannel chan AggregatedMetrics) error {
+func ServeNetRates(ctx context.Context, dataChannel chan AggregatedMetrics, serverAddress string) error {
 	netStats, err := net.IOCounters(false)
 	if err != nil {
 		return err

@@ -21,16 +21,17 @@ import (
 	"os"
 
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/vyattalee/grofer/pkg/core"
-	"github.com/vyattalee/grofer/pkg/metrics/factory"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/vyattalee/grofer/pkg/core"
+	"github.com/vyattalee/grofer/pkg/metrics/factory"
 )
 
 const (
 	defaultOverallRefreshRate = 1000
 	defaultConfigFileLocation = ""
 	defaultCPUBehavior        = false
+	defaultServerIpAddress    = "127.0.0.1"
 )
 
 var cfgFile string
@@ -60,7 +61,7 @@ While using a TUI based command, press ? to get information about key bindings (
 			return err
 		}
 
-		err = systemWideMetricScraper.Serve(factory.WithCPUInfoAs(rootCmd.cpuInfo))
+		err = systemWideMetricScraper.Serve(factory.WithCPUInfoAs(rootCmd.cpuInfo), factory.WithServerAddressAs(rootCmd.serverAddress))
 		if err != nil && err != core.ErrCanceledByUser {
 			fmt.Printf("Error: %v\n", err)
 		}
@@ -70,8 +71,9 @@ While using a TUI based command, press ? to get information about key bindings (
 }
 
 type rootCommand struct {
-	refreshRate uint64
-	cpuInfo     bool
+	refreshRate   uint64
+	cpuInfo       bool
+	serverAddress string
 }
 
 func constructRootCommand(cmd *cobra.Command, args []string) (*rootCommand, error) {
@@ -89,9 +91,15 @@ func constructRootCommand(cmd *cobra.Command, args []string) (*rootCommand, erro
 		return nil, err
 	}
 
+	serverAddress, err := cmd.Flags().GetString("serverip")
+	if err != nil {
+		return nil, err
+	}
+
 	return &rootCommand{
-		refreshRate: refreshRate,
-		cpuInfo:     cpuInfo,
+		refreshRate:   refreshRate,
+		cpuInfo:       cpuInfo,
+		serverAddress: serverAddress,
 	}, nil
 }
 
@@ -123,6 +131,13 @@ func init() {
 		"c",
 		defaultCPUBehavior,
 		"Info about the CPU Load over all CPUs",
+	)
+
+	rootCmd.Flags().StringP(
+		"serverip",
+		"s",
+		defaultServerIpAddress,
+		"server ip address",
 	)
 }
 

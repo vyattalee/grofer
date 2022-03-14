@@ -36,10 +36,10 @@ type AggregatedMetrics struct {
 	BatteryPercent int
 }
 
-type serveFunc func(context.Context, chan AggregatedMetrics) error
+type serveFunc func(context.Context, chan AggregatedMetrics, string) error
 
 // GlobalStats gets stats about the mem and the CPUs and prints it.
-func GlobalStats(ctx context.Context, dataChannel chan AggregatedMetrics, refreshRate uint64) error {
+func GlobalStats(ctx context.Context, dataChannel chan AggregatedMetrics, refreshRate uint64, serverAddress string) error {
 	serveFuncs := []serveFunc{
 		ServeCPURates,
 		ServeMemRates,
@@ -59,7 +59,7 @@ func GlobalStats(ctx context.Context, dataChannel chan AggregatedMetrics, refres
 			wg.Add(1)
 			go func(sf serveFunc, dc chan AggregatedMetrics) {
 				defer wg.Done()
-				errCh <- sf(ctx, dc)
+				errCh <- sf(ctx, dc, serverAddress)
 			}(sf, dataChannel)
 		}
 

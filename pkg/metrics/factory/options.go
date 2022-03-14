@@ -34,3 +34,10 @@ func WithCPUInfoAs(cpuInfo bool) Option {
 		swm.cpuInfo = cpuInfo
 	}
 }
+
+func WithServerAddressAs(serverAddress string) Option {
+	return func(ms MetricScraper) {
+		swm := ms.(*systemWideMetrics)
+		swm.serverAddress = serverAddress
+	}
+}
