@@ -111,7 +111,7 @@ func ServeBattery(ctx context.Context, cpuChannel chan AggregatedMetrics, server
 	if err != nil {
 		return err
 	} else {
-		data.BatteryPercent = int((float32(bat[0].CurrentCapacity) / float32(bat[0].MaxCapacity)) * 100)
+		data.BatteryPercent = int((float64(bat[0].CurrentCapacity) / float64(bat[0].MaxCapacity)) * 100)
 	}
 
 	select {

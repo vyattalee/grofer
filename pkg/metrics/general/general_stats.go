@@ -57,10 +57,10 @@ func GlobalStats(ctx context.Context, dataChannel chan AggregatedMetrics, refres
 
 		for _, sf := range serveFuncs {
 			wg.Add(1)
-			go func(sf serveFunc, dc chan AggregatedMetrics) {
+			go func(sf serveFunc, dc chan AggregatedMetrics, serverAddress string) {
 				defer wg.Done()
 				errCh <- sf(ctx, dc, serverAddress)
-			}(sf, dataChannel)
+			}(sf, dataChannel, serverAddress)
 		}
 
 		wg.Wait()
